@@ -1,0 +1,221 @@
+/* Base Styles */
+.home-slider {
+    max-width: 100%;
+    height: 600px;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.home-slide {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    opacity: 0;
+    transition: opacity 2s ease-in-out;
+    z-index: 1;
+}
+
+.home-slide.active {
+    opacity: 1;
+    z-index: 2;
+}
+
+.home-slider .home-slide img {
+    width: 100%;
+    height: 600px;
+    transition: opacity 2s ease-in-out;
+    object-fit: cover;
+}
+
+/* Navigation Buttons - General Style */
+.home-prev,
+.home-next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-weight: bold;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    /* Ligeramente más pequeño */
+    height: 40px;
+    font-size: 20px;
+    /* Reducido para equilibrar el diseño */
+    text-decoration: none;
+    transition: background-color 0.6s ease;
+    z-index: 2;
+}
+
+.home-prev:hover,
+.home-next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Positioning Navigation Buttons */
+.home-prev {
+    left: 1%;
+}
+
+.home-next {
+    right: 1%;
+}
+
+/* Media Queries for Responsive Design */
+@media (min-width: 1400px) {
+    .home-slider {
+        height: 700px;
+    }
+
+    .home-slider .home-slide img {
+        height: 700px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1399px) {
+    .home-slider {
+        height: 650px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .home-slider {
+        height: 550px;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .home-slider {
+        height: 450px;
+    }
+
+    .home-slider .home-slide img {
+        height: 450px;
+    }
+}
+
+@media (max-width: 767px) {
+    .home-slider {
+        height: 350px;
+    }
+
+    .home-slider .home-slide img {
+        max-height: 350px;
+    }
+}
+
+@media (max-width: 576px) {
+    .home-slider {
+        height: 250px;
+    }
+
+    .home-slider .home-slide img {
+        max-height: 250px;
+    }
+}
+
+@media (max-width: 480px) {
+    .home-slider {
+        height: 200px;
+    }
+
+    .home-slider .home-slide img {
+        max-height: 200px;
+    }
+}
+
+/*CARRUSEL SECUNDARIO*/
+.carousel-secondary {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.carousel-secondary-items {
+    display: flex;
+    transition: transform 0.5s ease;
+    padding: 0;
+    margin: 0;
+}
+
+.carousel-secondary-item {
+    box-sizing: border-box;
+    margin: 0;
+    flex: 0 0 25%;
+    padding: 10px;
+}
+
+.carousel-secondary-item img {
+    width: 100%;
+    max-height: 250px;
+    display: block;
+}
+
+.carousel-secondary-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 24px;
+    opacity: 0.7;
+}
+
+.carousel-secondary-prev {
+    left: 10px;
+}
+
+.carousel-secondary-next {
+    right: 10px;
+}
+
+/* Pantallas medianas */
+@media (max-width: 1024px) {
+    .carousel-secondary-item {
+        flex: 0 0 33.3333%;
+    }
+
+    .carousel-secondary-control {
+        padding: 8px 16px;
+        font-size: 20px;
+    }
+}
+
+/* Pantallas pequeñas */
+@media (max-width: 768px) {
+    .carousel-secondary-item {
+        flex: 0 0 50%;
+    }
+
+    .carousel-secondary-control {
+        padding: 6px 12px;
+        font-size: 16px;
+    }
+}
+
+/* Pantallas muy pequeñas */
+@media (max-width: 480px) {
+    .carousel-secondary-item {
+        flex: 0 0 100%;
+    }
+
+    .carousel-secondary-control {
+        padding: 4px 8px;
+        font-size: 12px;
+    }
+}
+
+/*CARRUSEL SECUNDARIO*/

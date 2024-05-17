@@ -1,0 +1,86 @@
+.label-files {
+    /* max-width: 100%;
+    max-height: 100%;
+    height: 400px; */
+    min-width: 100%;
+    width: 400px;
+    border: 1px solid rgb(218, 218, 220) !important;
+    background-color: white;
+    border-radius: 5px 0 0 5px;
+    padding: 6px 10px 8px 0px;
+    /* text-align: center;
+    display: flex;
+    vertical-align: middle !important;
+    justify-content: center;
+    align-items: center; */
+}
+
+.label-files input[type="file"] {
+    position: absolute;
+    top: -10000px;
+}
+
+.label-files span {
+    border: 1px solid gray;
+    /* border-radius: 5px; */
+    border-radius: 5px 0 0 5px;
+    padding: 10px 10px 10px 10px;
+    background-color: azure;
+}
+
+.upload-files {
+    border-bottom: 1px solid rgb(218, 218, 220);
+    border-left: 1px solid rgb(218, 218, 220);
+    border-radius: 5px;
+    background-color: rgb(218, 218, 220);
+    margin: 0 10% 2% 10%;
+    display: flex;
+}
+
+.upload-files:hover {
+    box-shadow: -2px 2px 5px 4px rgba(0,0,0, 0.1);
+    transition: box-shadow 0.3s;
+}
+
+/* .upload-files:hover .label-files span{
+    box-shadow: -1px 2px 5px 4px rgba(0,0,0, 0.1);
+    background-color: #33cc33;
+    border: 1px solid #33cc33;
+
+    transition: box-shadow 0.5s, background-color 1s, border 0.3s;
+} */
+
+.upload-files:hover .label-files span:hover {
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    transition: background-color 0.5s, color 0.3s, border 0.3s;
+}
+
+.btn-upload {
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 0 5px 5px 0;
+}
+
+.div-form-upload {
+    margin-bottom: 5%;
+}
+
+.btn-upload:hover {
+    background-color: green;
+    border: 1px solid green;
+    color: white;
+    transition: background-color 0.5s, color 0.3s, border 0.3s;
+}
+
+.back-button {
+    border: 1px solid #ff5050;
+    border-radius: 5px;
+    background-color: #ff5050;
+    color: white;
+    text-decoration: none;
+    padding: 15px 20px 15px 20px;
+    justify-content: center;
+    margin-left: 49%;
+}

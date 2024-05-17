@@ -1,0 +1,119 @@
+/* Estilos para el footer */
+.footer {
+    background-color: #24262b;
+    padding: 60px 0;
+}
+
+/* Contenedor del footer */
+.footer-container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+/* Filas del footer */
+.footer-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Sección del footer */
+.footer-col {
+    flex: 1;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+/* Encabezados de sección del footer */
+.footer-heading {
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+/* Subrayado debajo del encabezado */
+.footer-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    background-color: #e91e63;
+    height: 2px;
+    width: 40px;
+}
+
+/* Lista de enlaces */
+.footer-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Enlaces del footer */
+.footer-link {
+    font-size: 16px;
+    color: #bbbbbb;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    margin-bottom: 10px;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-link:hover {
+    color: #ffffff;
+    padding-left: 5px;
+}
+
+/* Estilos para los íconos de redes sociales */
+.footer-social {
+    display: flex;
+    gap: 10px;
+}
+
+.footer-social-link {
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+    background-color: rgba(255, 255, 255, 0.2);
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.footer-social-link:hover {
+    background-color: #e91e63;
+    color: #ffffff;
+}
+
+/* Estilos responsivos */
+@media (max-width: 768px) {
+    .footer-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-col {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .footer-heading::before {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+    .footer-social-link {
+        margin-top: 5px;
+    }
+}
